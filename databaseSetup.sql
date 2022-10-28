@@ -1,0 +1,12 @@
+CREATE DATABASE Products;
+USE Products;
+CREATE TABLE Orders (ItemID bigint(20) unsigned, CustomerEmail varchar(1024), Quantity int(10) unsigned);
+CREATE TABLE Bookstore (ItemID bigint(20) unsigned, Name varchar(1024), Description text, Cost decimal);
+CREATE TABLE Inventory (ItemID bigint(20) unsigned primary key, Count bigint(20) unsigned);
+INSERT INTO Bookstore (ItemID, Name, Description, Cost) VALUES (1, "Asynchronous Transfer Mode Networks", "Technical aspects of asynchronous transfer mode, the mode of choice for broadband integrated services digital networks, are discussed in 17 papers that comprise the proceedings of TRICOMM DEGREES93, held in Raleigh, NC, April 1993. Among the topics are electropolitical correctness, traffic managemen", 160.00);
+INSERT INTO Footwear (ItemID, Name, Description, Cost) VALUES (2, "Mathematics: The Language of Electrical and Computer Engineering ", "This book puts together mathematical concepts and techniques for applications in electrical and computer engineering. The presented concepts are sine qua non1 in both describing and understanding electrical signals and their properties. The emphasis is placed on how a concept or technique is applied to an electrical engineering system, not on mathematical rigor. As a result, (most of) the existence/uniqueness questions that a typical mathematical textbook would raise and address are bypassed in this textbook.", 85.00);
+INSERT INTO Footwear (ItemID, Name, Description, Cost) VALUES (3, "Probability and Random Processes", "This new text helps motivate your electrical engineering students to understand abstract probability theory. The use of modeling tools, "real-world" examples, and simulated engineering tools offer a "hands-on" approach to learning.", 45.00);
+INSERT INTO Inventory (ItemID, Count) VALUES (1, 25);
+INSERT INTO Inventory (ItemID, Count) VALUES (2,40);
+INSERT INTO Inventory (ItemID, Count) VALUES (3, 15);
+EXIT;
